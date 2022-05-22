@@ -1,0 +1,34 @@
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  background: rgba($color: #000000, $alpha: 0.3);
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item a {
+      display: block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 4px;
+
+      &:hover,
+      :focus {
+        color: #e12727;
+        background: rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+      }
+    }
+
+    &-item.active a,
+    :focus {
+      color: $color-accent-dark;
+      background: rgba($color: #000000, $alpha: 0.4);
+      text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+    }
+  }
+}

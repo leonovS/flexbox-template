@@ -1,0 +1,10 @@
+.rigth {
+    flex: 0 0 240px;
+    order: 3;
+
+    & a:focus,
+    a:hover {
+        color: #e12727;
+    }
+
+}

@@ -1,0 +1,24 @@
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 15px;
+  
+    &__image {
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+  
+    &__title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      display: block;
+      margin-bottom: 15px;
+      text-align: center;
+      letter-spacing: 5px;
+      color: $color-light;
+      font-family: "Lora", serif;
+      font-weight: 300;
+    }
+  }
+  
