@@ -8,9 +8,17 @@
     margin-left: -7.5px;
 
     &__item {
-      flex: 0 0 25%;
+
       padding: 0 7.5px;
       color: #eeeeee;
+
+      @include md-min {
+        flex: 0 0 25%;
+      }
+
+      @include md-sm {
+        float: 0 0 50%;
+      }
     }
   }
 

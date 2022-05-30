@@ -1,5 +1,7 @@
 .rigth .widget-news {
-  width: 240px;
+  @include lg-min {
+    width: 240px;
+  }
 
   &__item {
 

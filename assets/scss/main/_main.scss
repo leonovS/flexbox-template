@@ -1,7 +1,21 @@
-.main{
-    flex: 0 0 calc(100% - 220px - 240px);
-    padding-left: 30px;
-    padding-right: 30px;
+.main {
     order: 2;
- 
+
+    @include lg-min {
+        flex: 0 0 calc(100% - 220px - 240px);
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    @include lg-md {
+        flex: 0 0 calc(100% - 220px);
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    @include md {
+        order: 1;
+    }
+
 }

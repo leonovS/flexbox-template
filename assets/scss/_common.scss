@@ -9,7 +9,20 @@ html {
 }
 
 body {
-  padding: 0 30px;
+
+  @include lg-min {
+    padding: 0 30px;
+  }
+
+  @include md-min {
+    padding: 0 15px;
+  }
+
+  @include sm-min {
+    padding: 0 15px;
+  }
+
+
   width: 100%;
   max-width: 1380px;
   margin: 0 auto;
@@ -45,6 +58,10 @@ a {
 
 .container {
   display: flex;
+
+  @include lg {
+    flex-wrap: wrap;
+  }
 }
 
 img {

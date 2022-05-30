@@ -1,4 +1,19 @@
 .left {
-    flex: 0 0 220px;
+
     order: 1;
+
+    @include lg-min {
+        flex: 0 0 220px;
+    }
+
+    @include md-min {
+        flex: 0 0 220px;
+        margin-bottom: 15px;
+    }
+
+    @include md-sm {
+        width: 50%;
+        order: 2;
+        padding-right: 7.5px;
+    }
 }
